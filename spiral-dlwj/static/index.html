@@ -161,7 +161,7 @@
         });
        }
        //animation will end at delay * # nodes
-       setTimeout(congratulate, (eachNodeDelay * indexes.length));
+       setTimeout(congratulate, eachNodeDelay * indexes.length);
 
     }
 
@@ -193,7 +193,7 @@
 
     function printSpiral(matrix, printFunc) {
 
-       var layers = Math.ceil(Math.min(matrix.length, matrix[0].length));
+       var layers = Math.ceil(Math.min(matrix.length, matrix[0].length)/2);
        var baseWidth = matrix[1].length;
        var baseHeight = matrix.length;
        for (var i = 0; i < layers; i++) {
